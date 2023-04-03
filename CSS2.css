@@ -1,6 +1,6 @@
 body {
-    background: rgb(249,250,213);
-    background: linear-gradient(180deg, rgba(249,250,213,1) 0%, rgba(219,75,0,1) 100%); 
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(245,98,27,1) 0%, rgba(246,236,178,1) 100%); 
     }
 Logo {color:firebrick; 
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
