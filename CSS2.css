@@ -1,6 +1,11 @@
+body {
+    background: rgb(249,250,213);
+    background: linear-gradient(180deg, rgba(249,250,213,1) 0%, rgba(219,75,0,1) 100%); 
+    }
 Logo {color:firebrick; 
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     font-size: xx-large; 
     font-weight: bolder; 
     font-style: italic; 
-    text-align: center;}
+    text-align: center;
+    }
