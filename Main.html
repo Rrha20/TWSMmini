@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link href="CSS.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="Script.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Javascript.js"></script>
     <title> Firestones!</title> 
 </head>
 <body>
@@ -30,32 +33,59 @@
                 <input type="text" id="search" placeholder="Search...">
                 <button class="social_icon"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
-            <div id="results"></div>
+            <div id="display"></div>
         </nav>
 
         <div class="main">
                 <h1>Welcome to <br><span>the book store</span></h1>
         </div>
+        <section>
 
-    <!--books-->
+            <div class="slideShowContainer">
 
-    <div class="book">
+                <div class="slide">
+                    <h1 class="bogtitel">A tale of two cities</h1>
+                    <img class="slideShowBillede" src="image/a-tale-of-two-cities-464.jpg">
+                </div>
 
-        <h1>featured books</h1>
-            <button class="pikspiller" type="submit"> <img src="image/harry potter.jpg"></button>
-            <button class="pikspiller" type="submit"><img src="image/a-tale-of-two-cities-464.jpg"></button>
-            <button class="pikspiller" type="submit"><img src="image/dream-of-the-red-chamber.jpg"></button>
-            <button class="pikspiller" type="submit"><img src="image/the hobbit.jpg"></button>
-            <button class="pikspiller" type="submit"><img src="image/the little prince.jpg"></button>
-            <button class="pikspiller" type="submit"><img src="image/then-there-were-none.jpg"></button>
-    </div>
+                <div class="slide">
+                    <h1 class="bogtitel">Dream of the red chamber</h1>
+                    <img class="slideShowBillede" src="image/dream-of-the-red-chamber.jpg">
+                </div>
 
-    <button id="load-more-button">load more books</button>
-    <div id="book-container">
-        <!--books from the database-->
-    </div>
+                <div class="slide">
+                    <h1 class="bogtitel">Harry potter and the Philosopher's Stone</h1>
+                    <img class="slideShowBillede" src="image/harry potter.jpg">
+                </div>
 
+                <div class="slide">
+                    <h1 class="bogtitel">The Hobbit</h1>
+                    <img class="slideShowBillede" src="image/the hobbit.jpg">
+                </div>
+
+                <div class="slide">
+                    <h1 class="bogtitel">The little prince</h1>
+                    <img class="slideShowBillede" src="image/the little prince.jpg">
+                </div>
+
+                <div class="slide">
+                    <h1 class="bogtitel">Then there were none</h1>
+                    <img class="slideShowBillede" src="image/then-there-were-none.jpg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div class="dots">
+                <span class="currentdots" onclick="currentSlide(1)"></span>
+                <span class="currentdots" onclick="currentSlide(2)"></span>
+                <span class="currentdots" onclick="currentSlide(3)"></span>
+                <span class="currentdots" onclick="currentSlide(4)"></span>
+                <span class="currentdots" onclick="currentSlide(5)"></span>
+                <span class="currentdots" onclick="currentSlide(6)"></span>
+            </div>
+        </section>
     </section>
 </body>
-</html>    
-    
+</html>

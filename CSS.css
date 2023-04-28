@@ -4,15 +4,11 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
-section{
-    width: 100%;
-    height: 100vh;
-    background-image: url();
-    background-size: cover;
-    background-position: center;
-}
-
+body{ 
+    height: auto;
+    background-image: url(/image/bg.jpg);
+    background-size: 101%;
+} 
 section nav{
     width: 100%;
     display: flex;
@@ -27,7 +23,6 @@ section nav .logo img{
     width: 100px;
     cursor: pointer;
     margin: 8px 0;
-
 }
 section nav ul{
     list-style: none;
@@ -52,50 +47,64 @@ section nav .social_icon i:hover{
     color: #089da1;
     cursor: pointer;
 }
-section .main{
-    display: flex;
-    align-items: middle;
-    justify-content: space-around;
-    position: relative;
-    top: 10%;
-}
-section .main h1{
-    position: top;
-    font-size: 55px;
-    top: 80px;
-    margin-bottom: 100px;
-}
-section .books{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 40px;
-    margin-top: 40px;
-}
-.book img{
-    width: 300px;
-    height: 500px;
-    
-}
-.book h1{
-    font-size: 24px;
-    margin-top: 0px;
-    
-}
-.book p{
-    margin-top: 5px;
-    color: #666;
-}
 section Search
 {
     margin: 0 5px;
     font-size: 18px;
 }
-section books box fox
-{
-    margin: 10 5px;
+.main {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 34px;
 }
-.pikspiller
-{
-    border: none;
-    margin: 20px;
+section.slideShowContainer {
+    width: 20vw;
+    box-shadow: 15px 80px 60px rgb(77, 72, 72);
+    position: absolute;
+    margin-top: 3%;
+}
+.slideShowBillede {
+    width: 18vw;
+    height: 50vh;
+    margin-left: 41%;
+}
+.prev, .next {
+    cursor: pointer;
+    top: 40%;
+    color: white;
+    font-weight: bold;
+    font-size: 100px;
+    color: #089da1;;
+}
+.prev {
+    position: absolute;
+    top: 47%;
+    left: 32%;
+}
+.next {
+    position: absolute;
+    top: 47%;
+    left: 65%;
+    border-radius: 3px 0 0 3px;
+}
+.bogtitel {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 36px;
+}
+.dots {
+    text-align: center;
+}
+.currentdots {
+    height: 30px;
+    width: 30px;
+    margin: 0 0.5%;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 1.4vh;
+    cursor: pointer;
+}
+.active, .dot:hover {
+    background-color: #089da1;;
 }
